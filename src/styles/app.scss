@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'Gotham Pro Regular';
+  src: url('../fonts/GothamPro.eot');
+  src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamPro.woff') format('woff'),
+  url('../fonts/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+:root {
+  --shadow--color: 18, 18, 26; }
+
+
+*, *:before, *:after {
+
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent !important;
+  -moz-tap-highlight-color: transparent !important;
+  -o-tap-highlight-color: transparent !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+html, body {
+  font-family: 'Gotham Pro Regular';
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#circle {
+  width: 100%;
+  height: 100%;
+  transform: rotate(135deg);
+}
+#circle-percentage {
+  position: absolute;
+  color: #444;
+  top: -3em;
+  left: 0.3em;
+  right: 0;
+  font-size: 4em;
+}
+
+.sidebar {
+  box-shadow: inset -15px 0px 30px -20px rgba(100, 115, 130, 0.5);
+  width: 37.5rem;
+  background: #F8F9FB;
+  height: 100%;
+  padding-top: 3.0825rem;
+  padding-left: 2.4375rem;
+  padding-right: 2.75rem;
+
+
+
+
+  &__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__control-list {
+    padding-bottom: .2rem;
+    height: fit-content;
+    display: flex;
+    div:first-child {
+      padding-bottom: 0.29rem;
+      margin-right: 2.25rem;
+    }
+  }
+  &__separator {
+    margin-top: 0.25rem;
+    border: 1px solid #F0F0F0;
+    margin-bottom: 3.15rem;
+  }
+  &__user-card {
+    background: #FFFFFF;
+    box-shadow: 0 10px 15px rgba(145, 145, 145, 0.1);
+    border-radius: 20px;
+  }
+  &__avatar {
+    margin-left: 0.75rem;
+      img {
+        width: 85px;
+        height: 85px;
+        border-radius: 40px;
+        object-fit: cover;
+      }
+  }
+  &__person {
+    display: flex;
+    align-items: center;
+    padding: 30px 39px 30px 30px;
+  }
+  &__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 21px;
+    color: #333333;
+  }
+  &__position {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 17px;
+    color: #333333;
+  }
+}
+.flex-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  height: 100%;
+  width: 33%;
+  justify-content: space-around;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.8;
+  stroke-linecap: square;
+  transform-origin:center;
+  animation: progress 1s ease-out forwards;
+}
+.circle-anti {
+  animation: antiprogress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes antiprogress {
+  0% {
+    stroke-dasharray: 0 100;
+    transform: rotate(0deg);
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #f80;
+}
+
+.circular-chart.green .circle {
+  stroke: #00c851;
+}
+
+.circular-chart.blue .circle {
+  stroke: #33b5e5;
+}
+
+.circular-chart.blue .red {
+  stroke: #ff3547;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
