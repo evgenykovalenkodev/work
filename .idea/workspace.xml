@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c52d403-ceb7-4098-9354-ef53d71c97e7" name="Default Changelist" comment="" />
+    <list default="true" id="8c52d403-ceb7-4098-9354-ef53d71c97e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/fonts/GothamPro-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/GothamPro-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/GothamPro-Bold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,12 +17,16 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hJO312ZNR9kjiOU5RPlmnOY1W3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -28,14 +39,15 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/fonts" />
+      <recent name="$PROJECT_DIR$/src/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
   </component>
@@ -48,7 +60,8 @@
       <option name="presentableId" value="Default" />
       <updated>1599725526204</updated>
       <workItem from="1599725527230" duration="9115000" />
-      <workItem from="1599735721590" duration="10219000" />
+      <workItem from="1599735721590" duration="10290000" />
+      <workItem from="1599802797042" duration="25956000" />
     </task>
     <servers />
   </component>
@@ -64,5 +77,13 @@
       <screen x="0" y="27" width="1920" height="1000" />
     </state>
     <state x="783" y="342" key="FileChooserDialogImpl/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1599749903861" />
+    <state x="449" y="162" width="1022" height="737" key="SettingsEditor" timestamp="1599827529683">
+      <screen x="0" y="27" width="1920" height="1000" />
+    </state>
+    <state x="449" y="162" width="1022" height="737" key="SettingsEditor/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1599827529683" />
+    <state x="651" y="135" width="618" height="783" key="find.popup" timestamp="1599826604376">
+      <screen x="0" y="27" width="1920" height="1000" />
+    </state>
+    <state x="651" y="135" width="618" height="783" key="find.popup/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1599826604376" />
   </component>
 </project>
