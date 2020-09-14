@@ -205,6 +205,7 @@ ul li {
   &__avatar {
     display: flex;
     align-items: center;
+
     @media screen and (max-width: 1400px) {
       display: block;
       text-align: center;
@@ -275,10 +276,9 @@ ul li {
 }
 
 .content {
-  padding-top: 7.6875rem;
-  padding-bottom: 7.75rem;
-  padding-left: 8.88625rem;
-  padding-right: 5.4rem;
+  width: 100%;
+  padding: 7.6875rem 5.4rem 7.75rem 8.88625rem;
+  position: relative;
   &__account {
     position: relative;
     display: flex;
@@ -287,7 +287,9 @@ ul li {
 
   &__avatar {
     z-index: 2;
-
+    position: absolute;
+    left: 0;
+    bottom: 20.4rem;
     img {
       border-radius: 10px;
       width: 100%;
@@ -316,16 +318,15 @@ ul li {
   }
 
   &__info {
-    padding-left: 32.8%;
+    padding-left: 41.6%;
     padding-bottom: 19.8%;
     background: #F8F9FB;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     position: absolute;
-    max-width: 61.3125rem;
+    max-width: 67.3125rem;
     width: 100%;
     height: auto;
-    right: 0;
     top: 8.9rem;
   }
 
@@ -336,11 +337,9 @@ ul li {
     display: flex;
     align-items: center;
     margin-left: auto;
-    justify-content: flex-end;
+    justify-content: space-between;
 
     ul {
-      margin-right: 5.2rem;
-
       display: flex;
       align-items: center;
 
@@ -353,7 +352,7 @@ ul li {
         text-align: center;
 
 
-        margin-right: 4.6rem;
+        margin-right: 31.5%;
 
         position: relative;
       }
@@ -385,11 +384,9 @@ ul li {
     }
   }
   &__all-photos {
-    position: absolute;
-    right: 40.3rem;
     margin-top: 1.4rem;
     img {
-      margin-right: 1.2rem;
+      margin-left: 1.2rem;
       width: 5rem;
       height: 5rem;
       border-radius: 100%;
