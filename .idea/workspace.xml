@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c52d403-ceb7-4098-9354-ef53d71c97e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fonts/GothamPro-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/GothamPro-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/GothamPro-Bold.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +32,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -61,7 +59,10 @@
       <updated>1599725526204</updated>
       <workItem from="1599725527230" duration="9115000" />
       <workItem from="1599735721590" duration="10290000" />
-      <workItem from="1599802797042" duration="25956000" />
+      <workItem from="1599802797042" duration="26951000" />
+      <workItem from="1600064212098" duration="4873000" />
+      <workItem from="1600071699026" duration="675000" />
+      <workItem from="1600073147023" duration="10305000" />
     </task>
     <servers />
   </component>
@@ -73,17 +74,25 @@
       <screen x="0" y="27" width="1920" height="1000" />
     </state>
     <state x="758" y="334" width="393" height="393" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1599749307497" />
-    <state x="783" y="342" key="FileChooserDialogImpl" timestamp="1599749903861">
+    <state x="783" y="342" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600064363034">
       <screen x="0" y="27" width="1920" height="1000" />
     </state>
-    <state x="783" y="342" key="FileChooserDialogImpl/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1599749903861" />
+    <state x="783" y="342" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1600064363034" />
     <state x="449" y="162" width="1022" height="737" key="SettingsEditor" timestamp="1599827529683">
       <screen x="0" y="27" width="1920" height="1000" />
     </state>
     <state x="449" y="162" width="1022" height="737" key="SettingsEditor/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1599827529683" />
+    <state x="741" y="442" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600064241243">
+      <screen x="0" y="27" width="1920" height="1000" />
+    </state>
+    <state x="741" y="442" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1600064241243" />
     <state x="651" y="135" width="618" height="783" key="find.popup" timestamp="1599826604376">
       <screen x="0" y="27" width="1920" height="1000" />
     </state>
     <state x="651" y="135" width="618" height="783" key="find.popup/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1599826604376" />
+    <state x="624" y="239" key="run.anything.popup" timestamp="1600086804960">
+      <screen x="0" y="27" width="1920" height="1000" />
+    </state>
+    <state x="624" y="239" key="run.anything.popup/0.27.1920.1000/1920.0.1920.1080@0.27.1920.1000" timestamp="1600086804960" />
   </component>
 </project>
