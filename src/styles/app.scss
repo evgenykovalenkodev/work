@@ -37,6 +37,11 @@
   -o-tap-highlight-color: transparent !important;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;  -webkit-tap-highlight-color: transparent !important;
+  -moz-tap-highlight-color: transparent !important;
+  -o-tap-highlight-color: transparent !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -75,16 +80,18 @@ ul li {
 }
 
 .page {
+  overflow: hidden;
+  height: 100vh;
+  min-height: 650px;
   display: flex;
 }
 
 .sidebar {
-  box-shadow: inset -15px 0px 30px -20px rgba(100, 115, 130, 0.5);
+  box-shadow: inset -0.9375rem 0 1.875rem -1.25rem rgba(100, 115, 130, 0.5);
   width: 100%;
   min-width: 18rem;
   max-width: 31.5%;
   background: #F8F9FB;
-  padding-top: 3.1825rem;
   padding-left: 2.4375rem;
   padding-right: 2.75rem;
   position: relative;
@@ -100,6 +107,7 @@ ul li {
   }
 
   &__filter, &__sort, &__add-user, &__slider-btn div svg:hover, &__user-card:hover, &__user-card-checked:hover, li:hover, a:hover {
+    transition: .6s ease;
     cursor: pointer;
   }
 
@@ -111,8 +119,15 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    padding-top: 3.1825rem;
 
+  }
+  &__slider {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100% - 15.5rem);
+    padding-bottom: 1rem;
+  }
   &__slider-track {
     position: relative;
   }
@@ -120,7 +135,7 @@ ul li {
   &__slider-btn {
     display: flex;
     justify-content: center;
-    margin-top: 3.3125rem;
+    margin-top: 2.3125rem;
 
     div:first-child {
       margin-right: 2.69rem;
@@ -129,6 +144,9 @@ ul li {
 
   &__slider-btn div svg:hover {
     fill: #01CC6E;
+    transition: .6s ease;
+    cursor: pointer;
+
   }
 
   &__control-list {
@@ -141,17 +159,22 @@ ul li {
       margin-right: 2.25rem;
     }
   }
-
+  &__user-card:last-child {
+    margin: 0;
+  }
   &__user-card, &__user-card-checked {
-    min-height: 9.0733rem;
+    min-height: 15.7vh;
     background: #FFFFFF;
-    box-shadow: 0 10px 15px rgba(145, 145, 145, 0.1);
+    box-shadow: 0 0.625rem 0.9375rem rgba(145, 145, 145, 0.1);
     border-radius: 1.25rem;
     margin-bottom: 1.69rem;
   }
 
   &__user-card:hover, &__user-card-checked:hover {
     box-shadow: none;
+    transition: .6s ease;
+    cursor: pointer;
+
   }
 
   &__user-card-checked {
@@ -176,8 +199,8 @@ ul li {
     width: 8.0625rem;
     height: 100%;
     background: linear-gradient(180deg, #00A58F 0%, #00D069 100%);
-    box-shadow: 0px 10px 15px rgba(145, 145, 145, 0.1);
-    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0 0.625rem 0.9375rem rgba(145, 145, 145, 0.1);
+    border-radius: 0 1.25rem 1.25rem 0;
     z-index: -1;
     padding-left: 1.875rem;
 
@@ -195,10 +218,10 @@ ul li {
   }
 
   &__checked-mobile {
-    height: 5.6rem;
+    height: 8vh;
     background: linear-gradient(180deg, #00A58F 0%, #00D069 100%);
-    box-shadow: 0px 10px 15px rgba(145, 145, 145, 0.1);
-    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 0.625rem 0.9375rem rgba(145, 145, 145, 0.1);
+    border-radius: 0 0 1.25rem 1.25rem;
     position: relative;
 
     svg {
@@ -228,7 +251,6 @@ ul li {
       width: 100%;
       max-width: 5.3125rem;
       height: 100%;
-      max-height: 5.3125rem;
       border-radius: 2.5rem;
       object-fit: cover;
       @media screen and (max-width: 1400px) {
@@ -257,8 +279,8 @@ ul li {
     z-index: 2;
     position: relative;
     background: #FFFFFF;
-    border-radius: 18px;
-    width: calc(100% - 96px);
+    border-radius: 1.125rem;
+    width: calc(100% - 6rem);
     padding: 1.5rem 2.4375rem 1.675rem 2.45rem;
     @media screen and (max-width: 1260px) {
       justify-content: center;
@@ -290,7 +312,7 @@ ul li {
 
 .content {
   width: 100%;
-  padding: 7.6875rem 5.4rem 7.75rem 8.88625rem;
+  padding: 13.4vh 5.4rem 0 8.88625rem;
   position: relative;
   @media screen and (max-width: 900px) {
     padding: 3rem;
@@ -299,13 +321,13 @@ ul li {
     width: 39.125rem;
     height: 1.875rem;
     background: linear-gradient(90deg, rgba(1, 169, 140, 0.12) 0%, rgba(0, 207, 106, 0.12) 100%);
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
   &__line {
     width: 77%;
     height: 1.875rem;
     background: linear-gradient(90deg, #00A98C 23.39%, #00CF6A 80.15%);
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
   &__main, &__personal {
     padding-left: .8%;
@@ -384,7 +406,7 @@ ul li {
     }
 
     img {
-      border-radius: 10px;
+      border-radius: 0.625rem;
       width: 100%;
       @media screen and (max-width: 1400px) {
         img {
@@ -419,42 +441,11 @@ ul li {
     max-width: 39.125rem;
     height: 1.875rem;
     background: linear-gradient(90deg, rgba(1, 169, 140, 0.12) 0%, rgba(0, 207, 106, 0.12) 100%);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     @media screen and (max-width:1400px) {
       margin: 0 auto;
     }
   }
-  //
-  //&__tooltip{
-  //  left: 100%;
-  //  top: -1rem;
-  //  position: absolute;
-  //  width: 56px;
-  //  height: 42px;
-  //  padding: 20px;
-  //  border-radius: 10px;
-  //  background: #fff;
-  //  box-shadow: inset 0px 0px 0px 3px rgba(0,201,111, 0.8);
-  //  span {
-  //    font-size: 1rem;
-  //    font-weight: 600;
-  //    position: absolute;
-  //    left: 50%;
-  //    transform: translate(-50%, -29%);
-  //  }
-  //}
-  //&__tooltip:after{
-  //  content: '';
-  //  position: absolute;
-  //  left: 23px;
-  //  bottom: -5px;
-  //  width: 11px;
-  //  height: 11px;
-  //  background: inherit;
-  //  transform: rotate(45deg);
-  //  box-shadow: inset -5px -5px 0px -2px rgba(0,201,111, 0.8);
-  //}
-
 
   &__tooltip {
     position: absolute;
@@ -475,8 +466,8 @@ ul li {
     padding-left: 18.4vw;
     padding-bottom: 19.8%;
     background: #F8F9FB;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.625rem;
     position: absolute;
     max-width: 61.3125rem;
     width: -webkit-fill-available;
@@ -521,9 +512,12 @@ ul li {
         position: relative;
       }
 
-      li a:not(.active):hover {
-        top: -0.3125rem;
+      li:not(.active):hover {
+        margin-top: -0.3125rem;
         position: relative;
+        transition: .6s ease;
+        cursor: pointer;
+
       }
     }
   }
@@ -569,7 +563,7 @@ ul li {
     }
 
     &__active {
-      border: 3px solid #01CE6B;
+      border: 0.1875rem solid #01CE6B;
     }
 
     img {
@@ -581,24 +575,26 @@ ul li {
       @media screen and (max-width: 1400px) {
         width: 23%;
       }
+      bottom: 0;
     }
 
     img:hover {
+      transition:bottom .6s ease;
       cursor: pointer;
-      top: -0.3125rem;
+      bottom: 0.3125rem;
     }
   }
 }
 
 .vertical-separator {
-  border-left: 1px solid #F0F0F0;
+  border-left: 0.0625rem solid #F0F0F0;
   height: 2.5rem;
   margin-right: 0.75rem;
 }
 
 .separator {
   margin-top: 0.49rem;
-  border: 1px solid #F0F0F0;
+  border: 0.0625rem solid #F0F0F0;
   margin-bottom: 3.25rem;
 }
 
@@ -690,20 +686,21 @@ ul li {
 }
 
 hr {
-  width: 3px;
+  width: 0.1875rem;
   height: 3.125rem;
   margin: .5rem auto 0;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .hr-red {
   background: #ff3547;
-  border: 1px solid #ff3547;
+  border: 0.0625rem solid #ff3547;
 }
 
 .active {
+  top: .7rem;
   text-decoration: none;
-  border-bottom: 4px solid #00CF6A;
+  border-bottom: 0.25rem solid #00CF6A;
   padding-bottom: 1.04rem;
 }
 
@@ -712,9 +709,10 @@ hr {
 }
 
 .shadow-box:hover {
+  transition: .6s ease;
   cursor: pointer;
   font-size: 0;
-  box-shadow: 0px 5px 10px rgba(144, 144, 144, 0.35);
+  box-shadow: 0 0.3125rem 0.625rem rgba(144, 144, 144, 0.35);
   border-radius: 50%;
 }
 
@@ -722,7 +720,7 @@ hr {
 
 .new-user {
   background: #F8F9FB;
-  padding: 4rem 4.1rem 4rem 5rem;
+  padding: 7vh 4.1rem 0 5rem;
   width: 100%;
 
   &__nav {
@@ -766,8 +764,8 @@ hr {
 
 
       background: #28B46F;
-      box-shadow: 0px 10px 15px rgba(144, 144, 144, 0.2);
-      border-radius: 8px;
+      box-shadow: 0 0.625rem 0.9375rem rgba(144, 144, 144, 0.2);
+      border-radius: .5rem;
 
 
       letter-spacing: 0.1rem;
@@ -778,13 +776,15 @@ hr {
     }
 
     button:hover {
+      cursor: pointer;
+      transition: .6s ease;
       box-shadow: none;
     }
   }
 
   &__steps {
     display: flex;
-    margin-top: 4.5rem;
+    margin-top: 7.7vh;
     margin-left: 0.13rem
   }
 
@@ -792,13 +792,13 @@ hr {
     cursor: pointer;
     position: relative;
     margin-right: 9.7%;
-    width: 210px;
-    height: 118px;
+    width: 13.125rem;
+    height: 7.4rem;
 
     background: #FFFFFF;
-    border-radius: 8px;
+    border-radius: .5rem;
 
-    box-shadow: -10px 0px 40px -17px rgba(0, 0, 0, 0.2);
+    box-shadow: -0.625rem 0 2.5rem -1.0625rem rgba(0, 0, 0, 0.2);
 
     div {
       height: 100%;
@@ -813,7 +813,7 @@ hr {
     div p:nth-child(1) {
       margin-bottom: .7rem;
       font-weight: 600;
-      font-size: 34px;
+      font-size: 2.125rem;
 
       color: #000000;
     }
@@ -822,11 +822,14 @@ hr {
       margin-left: .1rem;
       font-style: normal;
       font-weight: normal;
-      font-size: 22px;
+      font-size: 1.375rem;
     }
   }
 
   &__step:hover {
+    cursor: pointer;
+
+    transition: .6s ease;
     box-shadow: none;
   }
 
@@ -838,14 +841,16 @@ hr {
   &__drop {
     position: relative;
     max-width: 28.2%;
-    height: 16.75rem;
+    height: 29vh;
     width: 100%;
 
     background-color: #F5F5F5;
     background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: rgba(196,196,196, 0.8); stroke-width: 4; stroke-dasharray: 10 12'/></svg>");
 
     margin-top: 1.85rem;
-
+    @media screen and (max-width: 1200px) {
+      height: 18vh;
+    }
     svg {
       position: absolute;
       top: 49%;
@@ -864,12 +869,15 @@ hr {
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
+        height: 94%;
+        object-fit: contain;
       }
     }
 
   }
 
   &__drop:hover {
+    transition: .6s ease;
     cursor: pointer;
     background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: rgba(0,207,106, 0.8); stroke-width: 4; stroke-dasharray: 10 12'/></svg>");
 
@@ -879,12 +887,12 @@ hr {
   }
 
   &__add-photo {
-    margin-top: 4.29rem;
+    margin-top: 7.5vh;
     letter-spacing: -.06rem;
   }
 
   &__form {
-    margin-top: 4.0625rem;
+    margin-top: 7vh;
 
     h1 {
       letter-spacing: -.06rem;
@@ -913,11 +921,11 @@ hr {
 
   &__input-wrapper &__input-data input {
     background: transparent;
-    border: 1px solid #9A9A9A;
-    border-radius: 10px;
+    border: 0.0625rem solid #9A9A9A;
+    border-radius: 0.625rem;
     height: 100%;
     width: 100%;
-    border-bottom: 2px solid silver;
+    border-bottom: 0.125rem solid silver;
     padding-left: 1.8rem;
     font-size: 1.4rem;
     letter-spacing: 0.067rem;
@@ -925,8 +933,8 @@ hr {
 
   &__input-data input:focus ~ label,
   &__input-data input:valid ~ label {
-    transform: translateY(-2.1875rem);
-    font-size: 14px;
+    transform: translate(1rem, -2.7rem);
+    font-size: 0.875rem;
     color: #2B2B2B;
   }
 
@@ -937,14 +945,15 @@ hr {
 
   &__input-wrapper &__input-data label {
     position: absolute;
-    bottom: 1.6rem;
-    left: 1.4rem;
+    left: 0;
+    transform: translate(1rem, -50%);
+    top: 50%;
     background: #F8F9FB;
     pointer-events: none;
     transition: all 0.3s ease;
     z-index: 9;
-    padding: 0 6px;
-    border-radius: 10px;
+    padding: 0 0.375rem;
+    border-radius: 0.625rem;
     font-size: 1.375rem;
     line-height: 1.3125rem;
     color: #000;
