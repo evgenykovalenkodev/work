@@ -194,7 +194,7 @@ ul li:not(.active) {
   &__user-card, &__user-card-checked {
     transition: .6s ease;
 
-    min-height: 13.4vh;
+    min-height: 14.8vh;
     background: #FFFFFF;
     box-shadow: 0 0.625rem 0.9375rem rgba(145, 145, 145, 0.1);
     border-radius: 1.25rem;
@@ -356,7 +356,7 @@ ul li:not(.active) {
 .content {
   display: block;
   width: 100%;
-  padding: 3.5vh 5.2vw 15vh 7.4vw;
+  padding: 12.57vh 5.2vw 15vh 7.4vw;
   margin: auto;
   position: relative;
   @media screen and (max-width: 900px) {
@@ -453,10 +453,11 @@ ul li:not(.active) {
     position: relative;
     left: 0;
     bottom: 0;
-    max-width: 54vh;
-
+    max-width: 42vh;
+    min-width: 20rem;
     @media screen and (max-width: 1200px) {
       max-width: 26%;
+      min-width: 13rem;
     }
     img {
       object-fit: cover;
@@ -532,6 +533,7 @@ ul li:not(.active) {
     position: absolute;
     max-width: 61.3125rem;
     width: -webkit-fill-available;
+    min-height: 25rem;
     height: 83%;
     top: 20%;
     @media screen and (min-width: 992px) and (max-width: 1200px){
