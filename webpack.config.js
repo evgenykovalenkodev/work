@@ -56,12 +56,6 @@ const config = {
             filename: 'index.html',
             template: path.resolve(__dirname, 'src', 'index.html')
         }),
-        new HtmlWebpackPlugin({
-            inject: true,
-            hash: false,
-            filename: 'index2.html',
-            template: path.resolve(__dirname, 'src', 'index2.html')
-        }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
         }),
