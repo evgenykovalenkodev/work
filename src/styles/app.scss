@@ -82,11 +82,16 @@ body {
 
 a {
   text-decoration: none;
+  transition: .6s ease;
 }
 
 
 ul li {
   list-style: none;
+}
+ul li:not(.active) {
+  transition: margin-top .6s ease;
+
 }
 
 .page {
@@ -158,13 +163,17 @@ ul li {
     div:first-child {
       margin-right: 2.69rem;
     }
+    transition: .6s ease;
+
   }
 
   &__slider-btn div svg:hover {
     fill: #01CC6E;
     transition: .6s ease;
     cursor: pointer;
-
+  }
+  &__slider-btn div svg {
+    transition: .6s ease;
   }
 
   &__control-list {
@@ -183,6 +192,7 @@ ul li {
   }
 
   &__user-card, &__user-card-checked {
+    transition: .6s ease;
 
     min-height: 13.4vh;
     background: #FFFFFF;
@@ -569,7 +579,7 @@ ul li {
       }
 
       li:not(.active):hover {
-        margin-top: -0.3125rem;
+        margin-top: -0.455rem;
         position: relative;
         transition: .6s ease;
         cursor: pointer;
@@ -609,6 +619,7 @@ ul li {
   }
 
   &__all-photos {
+
     margin-top: 1.4rem;
     margin-left: 5.4vw;
     width: 100%;
@@ -623,6 +634,7 @@ ul li {
     }
 
     img {
+      transition: .6s ease;
       margin-left: 1.2rem;
       width: 19.4%;
       height: 100%;
@@ -682,6 +694,8 @@ ul li {
 
     button {
       cursor: pointer;
+      transition: .6s ease;
+
       max-width: 13.8rem;
       width: 100%;
       margin-left: auto;
@@ -704,7 +718,6 @@ ul li {
       cursor: pointer;
       transition: .6s ease;
       box-shadow: none;
-      margin-top: 6.9vh;
     }
   }
 
@@ -716,6 +729,8 @@ ul li {
 
   &__step {
     cursor: pointer;
+    transition: .6s ease;
+
     position: relative;
     margin-right: 9.7%;
     width: 18.1%;
@@ -766,6 +781,7 @@ ul li {
   }
 
   &__drop {
+
     position: relative;
     max-width: 28.2%;
 
@@ -781,6 +797,8 @@ ul li {
     }
 
     svg {
+      transition: .6s ease;
+
       position: absolute;
       top: 49%;
       left: 50%;
@@ -806,11 +824,12 @@ ul li {
   }
 
   &__drop:hover {
-    transition: .6s ease;
     cursor: pointer;
     background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: rgba(0,207,106, 0.8); stroke-width: 4; stroke-dasharray: 10 12'/></svg>");
 
     svg {
+      transition: .6s ease;
+
       top: 6.6875rem;
     }
   }
@@ -1010,6 +1029,8 @@ hr {
 
 .shadow-box {
   display: flex;
+  transition: .6s ease;
+
 }
 
 .shadow-box:hover {
