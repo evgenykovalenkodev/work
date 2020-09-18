@@ -1004,15 +1004,15 @@ ul li:not(.active) {
 }
 
 .circular-chart.orange .circle, .circular-chart-info.orange .circle {
-  stroke: #f80;
+  stroke: #eec840;
 }
 
 .circular-chart.green .circle, .circular-chart-info.green .circle {
-  stroke: #00c851;
+  stroke: #37b283;
 }
 
 .circular-chart.red .circle, .circular-chart-info.red .circle {
-  stroke: #ff3547;
+  stroke: #e93a22;
 }
 
 .percentage {
@@ -1043,15 +1043,17 @@ hr {
 
 .shadow-box {
   display: flex;
+  font-size: 0;
   transition: .6s ease;
-
+  border-radius: 50%;
+  box-shadow: 0 0.3125rem 0.625rem rgba(144, 144, 144, 0.35);
 }
 
 .shadow-box:hover {
   transition: .6s ease;
   cursor: pointer;
   font-size: 0;
-  box-shadow: 0 0.3125rem 0.625rem rgba(144, 144, 144, 0.35);
+  box-shadow: none;
   border-radius: 50%;
 }
 
