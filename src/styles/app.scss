@@ -150,12 +150,16 @@ ul li:not(.active) {
     overflow-x: hidden;
     max-height: calc(100% - 15.5rem);
     padding-bottom: 1rem;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+  }
+  &__slider::-webkit-scrollbar {
+         width: 0;
   }
 
   &__slider-track {
     position: relative;
   }
-
   &__slider-btn {
     display: flex;
     justify-content: center;
@@ -840,7 +844,7 @@ ul li:not(.active) {
     svg {
       transition: .6s ease;
 
-      top: 6.6875rem;
+      top: 41%;
     }
   }
 
