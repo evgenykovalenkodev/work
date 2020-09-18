@@ -70,6 +70,7 @@ html {
 html, body {
   font-family: 'Gotham Pro Regular';
   height: 100%;
+  background: #F8F9FB;
 
 }
 
@@ -658,11 +659,15 @@ ul li:not(.active) {
 
 .modal {
   display: none;
-  background: #F8F9FB;
   padding: 7vh 5rem 4vh 4.95rem;
   width: 100%;
+
   @media screen and (max-height: 750px){
     height: 3vh;
+  }
+  @media screen and (max-height: 600px){
+    margin: auto;
+    height: auto;
   }
   &__nav {
     max-height: 5.8vh;
@@ -699,7 +704,7 @@ ul li:not(.active) {
     button {
       cursor: pointer;
       transition: .6s ease;
-
+      min-height: 2.5rem;
       max-width: 13.8rem;
       width: 100%;
       margin-left: auto;
